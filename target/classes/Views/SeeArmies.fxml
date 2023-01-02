@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #000000, #98948c);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WGames.Controller.SeeArmiesController">
+<center>
+   <VBox alignment="CENTER" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+      <children>
+         <HBox alignment="CENTER" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0">
+            <children>
+               <AnchorPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../styles.css">
+                     <children>
+                        <Button fx:id="fileUploadButton" layoutX="11.0" layoutY="88.0" mnemonicParsing="false" onAction="#fileUpload" style="-fx-background-color: transparent;" text="press here to choose army" textFill="WHITE">
+                           <font>
+                              <Font name="Papyrus" size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="back" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#backButtonClicked" style="-fx-background-color: transparent;" text="back" textFill="WHITE">
+                           <font>
+                              <Font name="Papyrus" size="36.0" />
+                           </font>
+                        </Button>
+                        <Text fx:id="nameOfTheArmies" fill="WHITE" layoutX="32.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name of army">
+                           <font>
+                              <Font name="Papyrus" size="48.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="theArmyTable" layoutX="32.0" layoutY="282.0" prefHeight="505.0" prefWidth="834.0" style="-fx-background-color: transparent;">
+                           <columns>
+                              <TableColumn fx:id="theArmyTableType" prefWidth="300.0" text="unit type" />
+                              <TableColumn fx:id="theArmyTableName" prefWidth="300.0" text="name" />
+                              <TableColumn fx:id="theArmyTableHealth" prefWidth="200.0" text="health" />
+                           </columns>
+                           <styleClass>
+                              <String fx:value="TextField" />
+                              <String fx:value="myDialog" />
+                           </styleClass>
+                        </TableView>
+                     </children>
+               </AnchorPane>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+</center>
+</BorderPane>

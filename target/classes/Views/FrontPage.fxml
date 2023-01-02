@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #000000, #98948c);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WGames.Controller.FrontPageController">
+   <center>
+      <VBox alignment="CENTER" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0">
+               <children>
+                  <AnchorPane minHeight="800.0" minWidth="1200.0" prefHeight="800.0" prefWidth="1200.0" stylesheets="@../styles.css">
+                     <children>
+                        <Label alignment="CENTER" layoutX="193.0" layoutY="55.0" prefHeight="143.0" prefWidth="855.0" text="WARGAMES" textAlignment="CENTER" textFill="WHITE" underline="true">
+                           <font>
+                              <Font name="Papyrus" size="71.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="seeArmiesButton" layoutX="519.0" layoutY="518.0" mnemonicParsing="false" onAction="#seeArmiesButtonClicked" prefHeight="108.0" prefWidth="238.0" style="-fx-background-color: transparent transparent;" text="see armies" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Papyrus" size="40.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="commenceBattleButton" layoutX="451.0" layoutY="216.0" mnemonicParsing="false" onAction="#commenceBattleButtonClicked" prefHeight="108.0" prefWidth="374.0" style="-fx-background-color: transparent transparent;" text="commence battle" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Papyrus" size="40.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="exit" layoutX="586.0" layoutY="626.0" mnemonicParsing="false" onAction="#exitTheGame" prefHeight="76.0" prefWidth="103.0" style="-fx-background-color: transparent;" text="exit" textFill="WHITE">
+                           <font>
+                              <Font name="Papyrus" size="36.0" />
+                           </font></Button>
+                        <Button fx:id="newArmyButton" layoutX="537.0" layoutY="421.0" mnemonicParsing="false" onAction="#newArmyButtonClicked" style="-fx-background-color: transparent;" text="build army" textFill="WHITE">
+                           <font>
+                              <Font name="Papyrus" size="36.0" />
+                           </font></Button>
+                        <Button fx:id="addArmyFromFileButton" layoutX="480.0" layoutY="324.0" mnemonicParsing="false" onAction="#addArmyFromFileButtonClicked" style="-fx-background-color: transparent;" text="add army from file" textFill="WHITE">
+                           <font>
+                              <Font name="Papyrus" size="36.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

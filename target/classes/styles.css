@@ -1,0 +1,123 @@
+Button:hover{
+    -fx-underline: true;
+}
+
+.Combobox{
+    -fx-font-family: papyrus;
+    -fx-font-size: 20;
+}
+
+.TextField{
+    -fx-font-family: papyrus;
+    -fx-font-size: 20;
+}
+
+.Text{
+    -fx-font-family: papyrus;
+    -fx-font-size: 20;
+}
+
+
+.TableView{
+    -fx-font-family: papyrus;
+    -fx-font-size: 20;
+}
+
+
+
+
+
+
+.table-view {
+    -fx-background-color: transparent;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF, #727272);
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+}
+
+
+.table-row-cell: hover {
+    -fx-background-color: transparent;
+    -fx-text-background-color: #990000;
+}
+
+.table-row-cell: odd{
+    -fx-background-color: #FFFFFF80;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+.table-row-cell: even{
+    -fx-background-color: #D1D1D180;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0;
+    -fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+    -fx-background-color:  linear-gradient(to bottom, #FFFFFF, #727272);
+}
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color:  linear-gradient(to right, #FFFFFF, #727272);
+}
+
+.table-row-cell: highlighted {
+    -fx-background-color: transparent;
+    -fx-background-radius: 15px;
+}
+
+
+
+
+.myDialog{
+    -fx-background-color: #990000;
+}
+.myDialog > *.button-bar > *.container{
+    -fx-background-color: #a9e200;
+}
+.myDialog > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.myDialog:header *.header-panel{
+    -fx-background-color: #a59c31;
+}
+.myDialog:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-fill: #292929;
+}
+
